@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Events</title>
+    <style>
+        h2 {
+            font-family: "Mesquite Std";
+            letter-spacing: 2.5px;
+            font-size: 2.75em;
+        }
+        h1 {
+            font-family: "Blackoak Std";
+            text-transform: uppercase;
+            font-size: 2em;
+        }
+        p {
+            font-family: "Chaparral Pro";
+            font-size: 1.3em;
+        }
+        body {
+            padding-top: 50px;
+            text-align: center;
+            color: #3c3c3c;
+            background-color: moccasin;
+            height: 100vh;
+
+        }
+        button {
+            border: none;
+            border-radius: 5px;
+            background-color: burlywood;
+            padding: 10px;
+            color: #3c3c3c;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-family: Playbill;
+
+        }
+        button:hover,
+        h1:hover,
+        h2:hover,
+        em:hover {
+            text-shadow: 2px 2px 3px white;
+            cursor: crosshair;
+        }
+
+
+    </style>
+    <script>
+
+    </script>
+</head>
+<body onload="console.log('Body loaded');" onclick="console.log('Body has been clicked');">
+    <h1 onclick="console.log('My header has been clicked, dang it.');">DOM Events</h1>
+    <h2 onmouseover="console.log('You hovered over my h2 element');"onclick="console.log('You\'ve clicked my h2!');">Please open your console</h2>
+    <p>This is my <em onclick="console.log('You have clicked on the word sentence');">sentence</em></p>
+    <button onclick="console.log('Yeehaw!  My button has been clicked, real good.');">Click It!</button>
+</body>
+</html>
