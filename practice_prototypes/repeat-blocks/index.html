@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repeat Blocks</title>
+    <script>
+//        //FOR LOOPS
+//        var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//        for(i = 0; i < numbers.length; i++ ) {
+//            console.log('Here is the numbers array in ascending order : ', numbers[i]);
+//        }
+//
+//        for(i=9; i >= 0; i-- ) {
+//            console.log('Here is the numbers array in descending order : ', numbers[i]);
+//        }
+//
+//        for(i = 0; i < numbers.length; i+=2) {
+//            console.log('Here are the odd numbers from the array : ', numbers[i]);
+//        }
+//
+//        var mixedArray = [4, 56, 11, 13, 97, 22, 7, 36, 19, 5, 8, 10];
+//
+//        for(i = 0; i < mixedArray.length; i++) {
+//            if(mixedArray[i] % 2) {
+//                console.log('Here are the odd numbers from the mixedArray : ', mixedArray[i]);
+//            }
+//        }
+//
+//        //FOR IN LOOP
+//        var classRoom = {
+//            desk1: 'Stu',
+//            desk2: 'Peggy',
+//            desk3: 'LoneStar',
+//            desk4: 'George',
+//            desk5: 'Sheldon'
+//        };
+//
+//        for(var index in classRoom) {
+//            console.log(classRoom[index] + ' is at ' + index);
+//        }
+
+        //WHILE LOOP
+        var studentArray = [
+            {name: "Bob", grade: 87},
+            {name: "Fred", grade: 82},
+            {name: "George", grade: 93},
+            {name: "Robert", grade: 85}
+        ];
+        function findStudent(studentName) {
+            var i = 0;
+            var found = false;
+            while (!found && i < studentArray.length  ) {
+
+                if(studentName == studentArray[i]['name']) {
+                    found = true;
+                    return 'Found ' + studentName + ' their grade is: ' + studentArray[i]['grade'] ;
+                }
+                i++;
+            } return 'Student ' + studentName + ' not found.';
+
+        }
+
+        console.log("Test 1:", findStudent("George"));
+
+    </script>
+</head>
+<body>
+    <h1>Repeat Blocks</h1>
+    <h2>Please open your console</h2>
+</body>
+</html>
