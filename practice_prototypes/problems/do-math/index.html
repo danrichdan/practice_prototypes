@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Do Math</title>
+
+    <script>
+
+        function do_math(num1, num2, operator) {
+            switch(operator) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = num1 / num2;
+                    break;
+                default:
+                    console.log('Please try again using correct parameter values.  Thank you.');
+            }
+            return result;
+        };
+
+        var equation = do_math(20, 5, '/');
+
+        console.log('Here is the result of calling the function : ', equation);
+    </script>
+
+</head>
+<body>
+    <h1>Do Math</h1>
+    <h2>Please open your console</h2>
+</body>
+</html>
