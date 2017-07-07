@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Number Or Array Element</title>
+
+    <script>
+
+        var alt_bands_Array = ["The Pixies", "Primus", "Janes Addiction", "Sonic Youth"];
+        function random_range(start_num, end_num) {
+            if (start_num && end_num) {
+                var random_number = ((Math.random() * (end_num - start_num)) + start_num);
+                var random_number_rounded = Math.round(random_number);
+                return random_number_rounded;
+            } else if (start_num) {
+                var myArray = start_num;
+                var randomArrayElement = myArray[Math.floor(Math.random() * myArray.length)];
+                return randomArrayElement;
+            }
+        };
+        console.log('Here is a random number within a range : ', random_range(1, 10));
+        console.log('Here is a random array element within an array : ', random_range(alt_bands_Array));
+
+    </script>
+
+</head>
+<body>
+
+    <h1>Random Number Or Array Element</h1>
+    <h2>Please open your console</h2>
+
+</body>
+</html>
